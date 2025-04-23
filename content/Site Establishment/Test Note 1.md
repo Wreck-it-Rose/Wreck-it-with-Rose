@@ -1,5 +1,5 @@
 ---
-modified: 04-22-2025 @ 21:49
+modified: 04-22-2025 @ 21:52
 ---
 
 What better way to start this blog than to document my struggles with setting up my Obsidian Vault and Github page to host this site.
@@ -29,14 +29,22 @@ What better way to start this blog than to document my struggles with setting up
 
 ## Foundation and Terminology:
 ### **node.js**
-The over-simplified version as it relates to Quartz:
-- Quartz, uses node.js to execute JavaScript on the backend via terminal commands on your device to generate static-site information from Markdown files (Obsidian's bread and butter).
+The over-simplified version as it relates to [Quartz](https://quartz.jzhao.xyz/) and [Obsidian](https://obsidian.md/):
+- Quartz, uses node.js to execute JavaScript on the 'backend' via terminal commands on your device to generate static-site information from Markdown files (Obsidian's bread and butter).
 - JavaScript natively runs in an internet browser environment (often referred to as the 'frontend') which can be limiting for certain use cases.
-- node.js is a runtime which facilitates the execution of JavaScript code directly on your device. Without node.js, Quartz couldn't transform your precious local files into a magnificent personalized website.
+- [node.js](https://nodejs.org/en/about) is a runtime which facilitates the execution of JavaScript code directly on your device. Without node.js, Quartz couldn't transform your precious local files into a magnificent personalized website.
 
 A vastly more technical explanation of Quartz architecture can be found [here](https://quartz.jzhao.xyz/advanced/architecture)
 
-### **NPM**
+### **Node Version Manager (NPM)**
+Now that we've established the crucial importance of node.js, we may need to manage it:
+- As you may have deduced, node.js was not developed solely for Quartz's implementation.
+- Quartz, as well as other projects, are built with respect to specific versions of node.js.
+- One can not simply update node.js without the risk of breaking something.
+- This is where NPM comes in:
+	- It allows you to install multiple versions of node.js
+	- It facilitates switching between these version via terminal command line. 
+
 
 
 
