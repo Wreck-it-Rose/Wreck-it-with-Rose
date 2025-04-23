@@ -1,5 +1,5 @@
 ---
-modified: 04-22-2025 @ 21:52
+modified: 04-22-2025 @ 22:12
 ---
 
 What better way to start this blog than to document my struggles with setting up my Obsidian Vault and Github page to host this site.
@@ -36,19 +36,40 @@ The over-simplified version as it relates to [Quartz](https://quartz.jzhao.xyz/)
 
 A vastly more technical explanation of Quartz architecture can be found [here](https://quartz.jzhao.xyz/advanced/architecture)
 
-### **Node Version Manager (NPM)**
-Now that we've established the crucial importance of node.js, we may need to manage it:
+### **Node Version Manager (NVM)**
+Now that we've established the crucial importance of node.js, we need to manage it:
 - As you may have deduced, node.js was not developed solely for Quartz's implementation.
 - Quartz, as well as other projects, are built with respect to specific versions of node.js.
-- One can not simply update node.js without the risk of breaking something.
+- One can not simply update a singular installation of node.js without the risk of breaking something.
 - This is where NPM comes in:
 	- It allows you to install multiple versions of node.js
 	- It facilitates switching between these version via terminal command line. 
 
+If you're still onboard this crazy train, let's install **node.js** with **NVM**:
+1. open your device's terminal and enter the following:
+	- replace *v0.40.2*  with latest stable version of NVM -> [check here](https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script) 
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
+```
+- Let's break this down a little further for you curious mittens:
+	- *curl -o-* :  downloads and installation script from the provided URL and outputs it in a standard manner.
+	- | (*vertical pipe symbol*): This output is then sent to *bash* to be executed.
+![[Screenshot 2025-04-22 at 10.47.43 PM.png]]
+2. After the above command has completed running, let's verify it was installed correctly:
+```bash
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+```
+- Let's break this down too:
+	- Simply: this command checks to see if the correct environment variable is set for NVM and expands NVM functionality to the appropriate (current) directory if necessary. This ensures nvm instructions will run correctly in the terminal.
+3.  Let's check the installed version of NVM:
+```bash
+nvm -v
+```
 
-
-
-
+4. Now to find and the right node.js version:
+```bash
+nvm -ls remote
+```
 
 
 
