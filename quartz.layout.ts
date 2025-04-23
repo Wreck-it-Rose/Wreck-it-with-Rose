@@ -67,11 +67,11 @@ export const defaultListPageLayout: PageLayout = {
   right: [],
 }
 
-// Functions below added by me
+// Functions below added by me:
 Component.Explorer({
   filterFn: (node) => {
     // set containing names of everything you want to filter out
-    const omit = new Set(["_assets"])
+    const omit = new Set(["_assets"]) // excludes _assets folder(s)
  
     // can also use node.slug or by anything on node.data
     // note that node.data is only present for files that exist on disk
