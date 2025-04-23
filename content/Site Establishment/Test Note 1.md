@@ -1,3 +1,6 @@
+---
+modified: 04-22-2025 @ 20:00
+---
 
 What better way to start this blog than to document my struggles with setting up my Obsidian Vault and Github page to host this site.
 
