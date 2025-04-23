@@ -1,6 +1,6 @@
 ---
 title: Wrecking it with Rose
-modified: 04-23-2025 @ 11:32
+modified: 04-23-2025 @ 12:07
 ---
 
 >[!warning]+ 🚧 **UNDER DESTRUCTION** 🚧
