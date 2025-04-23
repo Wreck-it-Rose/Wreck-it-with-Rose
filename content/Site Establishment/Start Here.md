@@ -1,22 +1,6 @@
 ---
-modified: 04-23-2025 @ 08:08
+modified: 04-23-2025 @ 09:24
 ---
-
-What better way to start this blog than to document my struggles with setting up my Obsidian Vault and Github page to host this site.
-
-#### Was it worth the time and effort?
-
-- I think so. Too soon to tell.
-#### Could my experience have been smoother?
-
-- Had this not been my first foray into node.js, Node Version Manager (NVM), NPM (Node Package Manager), Mac command line, and Github pages...perhaps...But it was my first encounter with all of these things. which slowed my progress significantly. 
-
-#### More importantly, can it be smooth for you? 
-
-- If I do my job right, yes! You might even learn something 🤞
-
-
-# Start Here
 ## Primer - Things You Should Know First:
 
 >[!abstract]+ **Resources already available to you**
@@ -24,7 +8,6 @@ What better way to start this blog than to document my struggles with setting up
 > 	- The official Quartz site is a wonderful resource and easy to navigate if you know what you're looking for. Keep this in your back pocket as a reference.
 > - [**Nicole van der Hoeven YouTube Tutorial**](https://www.youtube.com/watch?v=6s6DT1yN4dw)
 > 	- Nicole provides a much needed and solid guide for those who prefer video instruction. It covers the basics and will get you up and running. Not all steps are covered in the amount of detail I personally prefer.  This approach might trip you up as you follow along (like it tripped me 🤕).
-
 
 
 ## Foundation and Terminology:
@@ -52,6 +35,9 @@ If you're still onboard this crazy train, let's install **node.js** with **NVM**
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
 ```
+
+^fbfb59
+
 - Let's break this down a little further for you curious mittens:
 	- *curl -o-* :  downloads and installation script from the provided URL and outputs it in a standard manner.
 	- | (*vertical pipe symbol*): This output is then sent to *bash* to be executed.
@@ -65,7 +51,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 - Let's break this down too:
 	- Simply: this command checks to see if the correct environment variable is set for NVM and expands NVM functionality to the appropriate (current) directory if necessary. This ensures nvm instructions will run correctly in the terminal.
 	- why is the snippet I provided different from the snippet suggested in the above image?
-		- Either can be used, but the snippet I provided offers more flexibility because it standardizes where configuration files are located in respect to different applications.
+		- *Either snippet can be used*, but the snippet I provided in the code block offers more flexibility because it standardizes where configuration files are located in respect to different applications.
 			- Use the image snippet if you ALWAYS want NVM to be installed in the default location.
 			- Use the snippet provided in the code block if you'd rather respect the `XDG_CONFIG_HOME` environment variable. (this results in a more standardized configuration directory).
 	
@@ -73,6 +59,9 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 ```bash
 nvm -v
 ```
+
+![[Screenshot 2025-04-23 at 8.23.46 AM.png]]
+- The NVM version displayed should match the version you indicated in the installation instruction in [[Start Here#^fbfb59 | Step 1]].
 
 4. Now to find and the right node.js version:
 ```bash
