@@ -1,5 +1,5 @@
 ---
-modified: 04-23-2025 @ 08:10
+modified: 04-23-2025 @ 08:08
 ---
 
 What better way to start this blog than to document my struggles with setting up my Obsidian Vault and Github page to host this site.
@@ -55,13 +55,20 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
 - Let's break this down a little further for you curious mittens:
 	- *curl -o-* :  downloads and installation script from the provided URL and outputs it in a standard manner.
 	- | (*vertical pipe symbol*): This output is then sent to *bash* to be executed.
+	- 
 ![[Screenshot 2025-04-22 at 10.47.43 PM.png]]
+
 2. After the above command has completed running, let's verify it was installed correctly:
 ```bash
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 ```
 - Let's break this down too:
 	- Simply: this command checks to see if the correct environment variable is set for NVM and expands NVM functionality to the appropriate (current) directory if necessary. This ensures nvm instructions will run correctly in the terminal.
+	- why is the snippet I provided different from the snippet suggested in the above image?
+		- Either can be used, but the snippet I provided offers more flexibility because it standardizes where configuration files are located in respect to different applications.
+			- Use the image snippet if you ALWAYS want NVM to be installed in the default location.
+			- Use the snippet provided in the code block if you'd rather respect the `XDG_CONFIG_HOME` environment variable. (this results in a more standardized configuration directory).
+	
 3.  Let's check the installed version of NVM:
 ```bash
 nvm -v
