@@ -1,5 +1,5 @@
 ---
-modified: 04-22-2025 @ 22:12
+modified: 04-23-2025 @ 08:10
 ---
 
 What better way to start this blog than to document my struggles with setting up my Obsidian Vault and Github page to host this site.
@@ -38,14 +38,15 @@ A vastly more technical explanation of Quartz architecture can be found [here](h
 
 ### **Node Version Manager (NVM)**
 Now that we've established the crucial importance of node.js, we need to manage it:
-- As you may have deduced, node.js was not developed solely for Quartz's implementation.
+- As you may have deduced, node.js was NOT developed solely for Quartz's implementation.
 - Quartz, as well as other projects, are built with respect to specific versions of node.js.
-- One can not simply update a singular installation of node.js without the risk of breaking something.
-- This is where NPM comes in:
+- One does not simply update, or roll-back, a singular installation of node.js without the risk of breaking a program which depends on the original version.
+- This is where NVM comes in:
 	- It allows you to install multiple versions of node.js
-	- It facilitates switching between these version via terminal command line. 
+	- It also facilitates switching between those versions via terminal command line instructions. 
 
 If you're still onboard this crazy train, let's install **node.js** with **NVM**:
+
 1. open your device's terminal and enter the following:
 	- replace *v0.40.2*  with latest stable version of NVM -> [check here](https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script) 
 ```bash
