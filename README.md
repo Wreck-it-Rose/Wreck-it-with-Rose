@@ -1,4 +1,15 @@
-# Quartz v4
+---
+modified: 04-26-2025 @ 13:42
+---
+
+>[!warning]+ 🚧 **UNDER DESTRUCTION** 🚧
+>You've entered *Wreck it with Rose's* demolition zone...💥🔨
+>
+>Whether you stumbled upon this work-site, or were explicitly invited, WELCOME...but put a hard hat on!👷
+>
+>⚠️This page is in state of disrepair! Proceed with caution⚠️
+
+# Powered by Quartz v4:
 
 > “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
 
