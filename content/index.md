@@ -1,6 +1,6 @@
 ---
 title: Wrecking it with Rose
-modified: 04-27-2025 @ 15:04
+modified: 04-28-2025 @ 16:14
 ---
 
 >[!warning]+ 🚧 **UNDER DESTRUCTION** 🚧
@@ -9,4 +9,4 @@ modified: 04-27-2025 @ 15:04
 
 I'm in the process of testing a blog site which will catalogue the multitude of struggles I experience as I undertake various construction and maker projects. Ultimately I hope these perilous ventures save you from unnecessary harm and hair-pulling.   
 
-**Testing...in progress...**
+**Testing...in progress...please be patient**
