@@ -1,5 +1,5 @@
 ---
-title: Wrecking it with Rose
+title: Wreck it with Rose
 modified: 04-28-2025 @ 17:02
 ---
 
