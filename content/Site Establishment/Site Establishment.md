@@ -1,5 +1,5 @@
 ---
-modified: 04-30-2025 @ 16:46
+modified: 04-30-2025 @ 17:18
 ---
 %% Begin Waypoint %%
 - [[0. Introduction - Quartz Tutorial]]
@@ -7,5 +7,6 @@ modified: 04-30-2025 @ 16:46
 - [[2. Setting up Obsidian]]
 - [[3. Installing Quartz]]
 - [[4. Deploy your site with GitHub]]
+- **[[Landmark Test]]**
 
 %% End Waypoint %%

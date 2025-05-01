@@ -1,5 +1,5 @@
 ---
-title: Wreck it with Rose
+title: Wreck it with Rose Blog
 modified: 04-28-2025 @ 17:02
 ---
 
