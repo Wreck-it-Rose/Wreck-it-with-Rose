@@ -1,4 +1,0 @@
-%% Begin Landmark %%
-
-
-%% End Landmark %%

@@ -7,6 +7,5 @@ modified: 04-30-2025 @ 17:18
 - [[2. Setting up Obsidian]]
 - [[3. Installing Quartz]]
 - [[4. Deploy your site with GitHub]]
-- **[[Landmark Test]]**
 
 %% End Waypoint %%
