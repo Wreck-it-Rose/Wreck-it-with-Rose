@@ -55,6 +55,7 @@ const config: QuartzConfig = {
   },
   plugins: {
     transformers: [
+      Plugin.HardLineBreaks(), // Added to address issues with translating line breaks in Obsidian to HTML
       Plugin.FrontMatter(),
       Plugin.CreatedModifiedDate({
         priority: ["frontmatter", "git", "filesystem"],
